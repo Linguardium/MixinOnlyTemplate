@@ -19,12 +19,9 @@ repositories {
 }
 
 loom {
-    splitEnvironmentSourceSets()
-
 	mods {
 		"mixinonlytemplate" {
 			sourceSet sourceSets.main
-			sourceSet sourceSets.client
 		}
 	}
 
