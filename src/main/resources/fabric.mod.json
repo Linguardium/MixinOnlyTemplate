@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "mixinonlytemplate",
+	"id": "${modid}",
 	"version": "${version}",
 	"name": "MixinOnlyTemplate",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -16,10 +16,8 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"mod.template.mixinonlytemplate.MixinOnlyTemplate"
 		],
 		"client": [
-			"mod.template.mixinonlytemplate.MixinOnlyTemplateClient"
 		]
 	},
 	"mixins": [
@@ -30,12 +28,9 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.14.24",
-		"minecraft": "~1.20.2",
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
